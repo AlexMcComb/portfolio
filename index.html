@@ -7,15 +7,22 @@
       href="https://fonts.googleapis.com/css?family=Fira+Mono"
       rel="stylesheet"
     />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"
+      integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0"
+      crossorigin="anonymous"
+    ></script>
     <title>Alex's Portfolio</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="header">
+    <div class="header" id="home">
       <div class="header-right">
-        <a class="active" href="#home">Home</a>
-        <a href="#contact">Contact</a>
+        <a class="active" href="#projects">Projects</a>
         <a href="#about">About</a>
+        <a href="https://github.com/AlexMcComb?tab=repositories">GitHub</a>
+        <a href="https://www.linkedin.com/in/alex-mccomb-0aa34698/">Linkedin</a>
       </div>
     </div>
 
@@ -23,91 +30,143 @@
       <div class="header-text">
         <h1>Hi, I'm Alex, a web developer</h1>
         <h1>from Salt Lake City.</h1>
+        <br />
         <p>
           This portfolio showcases current work and recent projects I'm proud
           of.
         </p>
       </div>
     </div>
+    <div id="projects"></div>
     <section class="container">
       <div class="left-half-a content">
-        <article>
-          <h1>Left Half</h1>
-          <p>
-            Weekends don't count unless you spend them doing something
-            completely pointless.
-          </p>
-        </article>
+        <h1>Peek</h1>
+        <p>
+          A fullstack app focused on using React and Redux. The user is able to
+          log in or register, filter hikes based on their preferences, add them
+          to their favorites, and visualize the hikes on a map.
+        </p>
       </div>
       <div class="right-half-a content">
-        <article>
-          <h1>Right Half</h1>
-          <p>
-            If your knees aren't green by the end of the day, you ought to
-            seriously re-examine your life.
-          </p>
-        </article>
+        <img
+          src="images/react.png"
+          alt="react hike finder"
+          class="portfolio-image"
+        />
       </div>
     </section>
     <section class="container">
       <div class="left-half-b content">
-        <article>
-          <h1>Left Half</h1>
-          <p>
-            Weekends don't count unless you spend them doing something
-            completely pointless.
-          </p>
-        </article>
+        <img
+          src="images/node.png"
+          alt="empire bike parcel"
+          class="portfolio-image"
+        />
       </div>
       <div class="right-half-b content">
-        <article>
-          <h1>Right Half</h1>
-          <p>
-            If your knees aren't green by the end of the day, you ought to
-            seriously re-examine your life.
-          </p>
-        </article>
+        <h1>Empire Bike Parcel</h1>
+        <p>
+          A full stack delivery based app that gives businesses a platform to
+          post deliveries for bike messengers with a mapped directions. Focused
+          backend operations using node.js and CRUD operations.
+        </p>
       </div>
     </section>
     <section class="container">
       <div class="left-half-a content">
-        <article>
-          <h1>Left Half</h1>
-          <p>
-            Weekends don't count unless you spend them doing something
-            completely pointless.
-          </p>
-        </article>
+        <h1>Ski Quest Weather</h1>
+        <p>
+          A weather driven app allows users to discover new ski locations and
+          determine if it's a good day to go skiing based on weather conditions.
+          This app was created to with jQuery and an external API.
+        </p>
       </div>
       <div class="right-half-a content">
-        <article>
-          <h1>Right Half</h1>
-          <p>
-            If your knees aren't green by the end of the day, you ought to
-            seriously re-examine your life.
-          </p>
-        </article>
+        <img
+          src="images/jquery.png"
+          alt="ski quest weather"
+          class="portfolio-image"
+        />
       </div>
     </section>
     <section class="container">
       <div class="left-half-b content">
-        <article>
-          <h1>Left Half</h1>
-          <p>
-            Weekends don't count unless you spend them doing something
-            completely pointless.
-          </p>
-        </article>
+        <img
+          src="images/hub.png"
+          alt="wild utah hub website"
+          class="portfolio-image"
+        />
       </div>
       <div class="right-half-b content">
-        <article>
-          <h1>Right Half</h1>
-          <p>
-            If your knees aren't green by the end of the day, you ought to
-            seriously re-examine your life.
-          </p>
-        </article>
+        <h1>Wild Utah Project Open Data</h1>
+        <p>
+          A website hosting open data, created using ArcGIS Hub, RESTful
+          Services, and JavaScript, and data were published using Python. The
+          user can serach the server for maps and data, explore and download it.
+        </p>
       </div>
+    </section>
+    <section class="container">
+      <div class="left-half-a content">
+        <h1>3D Migration App</h1>
+        <p>
+          This project uses the ArcGIS JavaScript API 3D capabilities to allow
+          users to interact with the results of a deer movement model.
+        </p>
+      </div>
+      <div class="right-half-a content">
+        <img
+          src="images/3d.png"
+          alt="ski quest weather"
+          class="portfolio-image"
+        />
+      </div>
+    </section>
+    <section class="container">
+      <div class="diagram content">
+        <img
+          src="images/diagram.png"
+          alt="wild utah hub website"
+          class="portfolio-image"
+        />
+      </div>
+      <div class="diagram-text content">
+        <h1>SQL Database Management</h1>
+        <p>
+          A project for a database management class. A SQL database designed and
+          planned using an entity relationship model and a relational model.
+          This laid the groundwork for how the database would function.
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="main style2">
+      <section class="container">
+        <div class="icon-container">
+          <ul class="major-icons">
+            <li><span class="icon fab fa-js-square fa-sm"></span></li>
+            <li><span class="icon fab fa-html5 fa-sm"></span></li>
+            <li><span class="icon fab fa-css3-alt fa-sm"></span></li>
+            <li><span class="icon fab fa-github fa-sm"></span></li>
+            <li><span class="icon fab fa-node fa-sm"></span></li>
+            <li><span class="icon fab fa-react fa-sm"></span></li>
+            <li><span class="icon fab fa-python fa-sm"></span></li>
+            <li><span class="icon fas fa-database fa-sm"></span></li>
+          </ul>
+        </div>
+
+        <div class="about-me content">
+          <h1>A little about me.</h1>
+          <p>
+            Working towards my master's degree in GIS, I took multiple classes
+            that were computer science focused that sparked my interest in web
+            development. Since then I've implemented my skills working with
+            databases, creating apps, and writing scripts to automate workflow.
+            I'm also a student broadening my skills in a full stack web
+            development course.
+          </p>
+        </div>
+      </section>
     </section>
   </body>
 </html>
