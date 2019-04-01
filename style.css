@@ -6,6 +6,7 @@
 body {
   margin: 0;
   font-family: "Fira Mono", monospace;
+  line-height: 2rem;
 }
 
 .header {
@@ -16,7 +17,7 @@ body {
 
 .header a {
   float: left;
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 18px;
   text-decoration: none;
@@ -33,11 +34,6 @@ body {
 .header a:hover {
   background-color: #ddd;
   color: black;
-}
-
-.header a.active {
-  background-color: rgb(107, 117, 122);
-  color: white;
 }
 
 .header-right {
@@ -71,9 +67,19 @@ body {
   justify-content: center;
 }
 
+.content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin: 0 0 0.75rem 0;
+}
+
+p {
+  font-size: 0.9rem;
 }
 
 /* Pattern styles */
@@ -93,8 +99,9 @@ h1 {
   flex: 1;
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: 42%;
-  padding: 3rem;
+  flex-basis: 50%;
+  padding: 8rem 6rem 0rem 7rem;
+  height: 510px;
 }
 
 .diagram {
@@ -112,20 +119,40 @@ h1 {
 
 .right-half-a {
   flex: 1;
-  padding: 7rem 2rem 0rem 0rem;
+  padding: 0rem 6rem 0rem 0rem;
 }
 
 .left-half-b {
   flex: 1;
-  padding: 7rem 0rem 0rem 2rem;
+  padding: 0rem 0rem 0rem 6rem;
 }
 
 .right-half-b {
   flex: 1;
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: 42%;
-  padding: 3rem;
+  flex-basis: 50%;
+  padding: 8rem 7rem 7rem 7rem;
+  height: 510px;
+}
+
+.button {
+  padding: 13px 28px;
+  text-align: center;
+  font-size: 13px;
+  margin: 4px 2px;
+  width: auto;
+  text-decoration: none;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: black;
+  border: 1px solid #555555;
+}
+
+.button:hover {
+  background-color: #555555;
+  color: white;
 }
 
 @keyframes fadein {
@@ -166,7 +193,7 @@ h1 {
 
 .portfolio-image {
   max-width: 100%;
-  height: auto;
+  width: 700px;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -195,6 +222,7 @@ ul.major-icons li .icon {
   text-align: center;
   width: 8em;
 }
+
 .icon-container {
   margin: 0 auto;
   max-width: calc(100% - 4em);
@@ -206,21 +234,93 @@ ul.major-icons li .icon {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
     url(./images/header.jpg);
   background-size: auto, cover;
+  margin-top: 50px;
 }
 
-@media screen and (max-width: 500px) {
-  .icon-container {
-    display: inline;
+@media screen and (max-width: 2600px) and (min-width: 1441px) {
+  .portfolio-image {
+    width: 1200px;
+  }
+  h1 {
+    font-size: 44px;
+  }
+  p {
+    font-size: 26px;
+    line-height: 2.7rem;
+  }
+  .button {
+    font-size: 22px;
+  }
+  .right-half-a {
+    flex: 1;
+    padding: 3rem 6rem 0rem 0rem;
   }
 
+  .left-half-b {
+    flex: 1;
+    padding: 3rem 0rem 0rem 6rem;
+  }
+}
+
+@media screen and (max-width: 1224px) {
+  ul.major-icons li {
+    padding: 0.7em;
+  }
+  .header-container {
+    padding: 335px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .major-icons {
     display: none;
   }
+  .about-me {
+    flex-basis: 100%;
+  }
 
+  .container {
+    flex-direction: column;
+  }
+
+  .left-half-a {
+    width: 100%;
+    order: 1;
+    padding: 3rem 3rem 0rem 3rem;
+    height: 300px;
+  }
+
+  .right-half-a {
+    width: 100%;
+    order: 2;
+    padding: 0rem 3rem 0rem 3rem;
+  }
+
+  .left-half-b {
+    width: 100%;
+    order: 4;
+    padding: 0rem 3rem 0rem 3rem;
+  }
+
+  .right-half-b {
+    width: 100%;
+    order: 3;
+    padding: 3rem 3rem 0rem 3rem;
+    height: 300px;
+  }
+  .header-container {
+    width: 100%;
+    padding: 350px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
   .header a {
     float: none;
-    display: block;
+    display: inline-block;
     text-align: left;
+    font-size: 12px;
+    padding: 16px;
   }
 
   .header-right {
@@ -232,31 +332,54 @@ ul.major-icons li .icon {
   }
 
   .left-half-a {
-    width: 100%;
-    order: 1;
+    padding: 3rem 1rem 1rem 1rem;
+    height: auto;
   }
 
   .right-half-a {
     width: 100%;
-    order: 2;
+    padding: 1rem 1rem 1rem 1rem;
   }
 
   .left-half-b {
     width: 100%;
-    order: 4;
+    padding: 1rem 1rem 0rem 1rem;
   }
 
   .right-half-b {
-    width: 100%;
-    order: 3;
+    padding: 2rem 1rem 0rem 1rem;
+    height: auto;
   }
   .header-container {
     width: 100%;
     padding: 210px 0 0 0;
-    background: rgb(64, 145, 141);
   }
 
   .header-text {
-    top: 375px;
+    top: 160px;
+    line-height: 1rem;
+  }
+
+  .portfolio-image {
+    width: 400pxx;
+  }
+  h1 {
+    font-size: 17px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+  .button {
+    font-size: 10px;
+  }
+  .about-me {
+    padding: 2rem 1rem 0rem 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header a {
+    padding: 9px;
   }
 }
