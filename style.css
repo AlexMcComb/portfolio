@@ -239,30 +239,36 @@ ul.major-icons li .icon {
 
 @media screen and (max-width: 2600px) and (min-width: 1441px) {
   .portfolio-image {
-    width: 1200px;
+    width: 1100px;
   }
   h1 {
-    font-size: 44px;
+    font-size: 36px;
   }
   p {
-    font-size: 26px;
+    font-size: 23px;
     line-height: 2.7rem;
   }
   .button {
     font-size: 22px;
   }
   .right-half-a {
-    flex: 1;
     padding: 3rem 6rem 0rem 0rem;
   }
 
   .left-half-b {
-    flex: 1;
     padding: 3rem 0rem 0rem 6rem;
+  }
+
+  .right-half-b {
+    padding: 7rem 3rem 0rem 3rem;
+  }
+
+  .left-half-a {
+    padding: 7rem 3rem 0rem 6rem;
   }
 }
 
-@media screen and (max-width: 1224px) {
+@media screen and (max-width: 1439px) {
   ul.major-icons li {
     padding: 0.7em;
   }
