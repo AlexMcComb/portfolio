@@ -41,7 +41,7 @@ body {
 }
 
 .header-container {
-  padding: 270px;
+  padding: 250px;
   background: rgb(64, 145, 141);
 }
 
@@ -50,7 +50,7 @@ body {
   border-radius: 1em;
   padding: 1em;
   position: absolute;
-  top: 275px;
+  top: 290px;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -74,8 +74,8 @@ body {
 }
 
 h1 {
-  font-size: 1.4rem;
-  margin: 0 0 0.75rem 0;
+  font-size: 2.1rem;
+  margin-bottom: 0.75rem;
 }
 
 p {
@@ -314,6 +314,19 @@ ul.major-icons li .icon {
   }
 }
 
+@media screen and (max-width: 648px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+  .right-half-a {
+    padding: 2rem 3rem 0rem 3rem;
+  }
+
+  .left-half-b {
+    padding: 2rem 3rem 0rem 3rem;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .header a {
     float: none;
@@ -337,12 +350,10 @@ ul.major-icons li .icon {
   }
 
   .right-half-a {
-    width: 100%;
     padding: 1rem 1rem 1rem 1rem;
   }
 
   .left-half-b {
-    width: 100%;
     padding: 1rem 1rem 0rem 1rem;
   }
 
@@ -356,7 +367,7 @@ ul.major-icons li .icon {
   }
 
   .header-text {
-    top: 160px;
+    top: 170px;
     line-height: 1rem;
   }
 
@@ -364,7 +375,7 @@ ul.major-icons li .icon {
     width: 400pxx;
   }
   h1 {
-    font-size: 17px;
+    font-size: 16px;
   }
   p {
     font-size: 12px;
@@ -374,7 +385,8 @@ ul.major-icons li .icon {
     font-size: 10px;
   }
   .about-me {
-    padding: 2rem 1rem 0rem 1rem;
+    padding: 2rem;
+    color: white;
   }
 }
 
