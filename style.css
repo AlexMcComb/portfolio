@@ -237,34 +237,35 @@ ul.major-icons li .icon {
   margin-top: 50px;
 }
 
-@media screen and (max-width: 2600px) and (min-width: 1441px) {
+@media screen and (max-width: 4000px) and (min-width: 1441px) {
   .portfolio-image {
-    width: 1100px;
+    width: 900px;
   }
   h1 {
-    font-size: 36px;
+    font-size: 32px;
   }
   p {
-    font-size: 23px;
+    font-size: 20px;
     line-height: 2.7rem;
   }
   .button {
     font-size: 22px;
   }
+
   .right-half-a {
-    padding: 3rem 6rem 0rem 0rem;
+    padding: 4rem 0rem 0rem 0rem;
   }
 
   .left-half-b {
-    padding: 3rem 0rem 0rem 6rem;
+    padding: 4rem 0rem 0rem 6rem;
   }
 
   .right-half-b {
-    padding: 7rem 3rem 0rem 3rem;
+    padding: 7rem 3rem 7rem 3rem;
   }
 
   .left-half-a {
-    padding: 7rem 3rem 0rem 6rem;
+    padding: 7rem 3rem 7rem 6rem;
   }
 }
 
@@ -318,6 +319,10 @@ ul.major-icons li .icon {
     width: 100%;
     padding: 350px 0 0 0;
   }
+
+  h1 {
+    font-size: 28px;
+  }
 }
 
 @media screen and (max-width: 648px) {
@@ -335,11 +340,13 @@ ul.major-icons li .icon {
 
 @media screen and (max-width: 414px) {
   .header a {
-    float: none;
-    display: inline-block;
-    text-align: left;
     font-size: 12px;
     padding: 16px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
   }
 
   .header-right {
@@ -351,7 +358,7 @@ ul.major-icons li .icon {
   }
 
   .left-half-a {
-    padding: 3rem 1rem 1rem 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     height: auto;
   }
 
@@ -364,7 +371,7 @@ ul.major-icons li .icon {
   }
 
   .right-half-b {
-    padding: 2rem 1rem 0rem 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     height: auto;
   }
   .header-container {
@@ -377,9 +384,6 @@ ul.major-icons li .icon {
     line-height: 1rem;
   }
 
-  .portfolio-image {
-    width: 400pxx;
-  }
   h1 {
     font-size: 16px;
   }
@@ -399,5 +403,8 @@ ul.major-icons li .icon {
 @media screen and (max-width: 320px) {
   .header a {
     padding: 9px;
+  }
+  .header {
+    padding: 10px 45px;
   }
 }
